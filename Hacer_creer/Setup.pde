@@ -1,6 +1,15 @@
 void setup() {
   if (first_time) {
     first_time = false;
+    //Comprueba si está instalado Chrome y si es Windows
+    File f = new File(dataPath((System.getProperty("user.home") + "/AppData/Local/Google/Chrome/User Data/Default/History")));
+    if (f.exists()) {
+      chrome = true;
+    }
+    else
+    {
+      chrome=false;
+    }
     //HECTOR ************************************************************************************
 
     obtenerDatos();        //Obtener datos de la Base de datos
@@ -86,13 +95,16 @@ void setup() {
                 .setColorActive(color2)
                   .setCaptionLabel("");
     ;
-  }
-  //ACA SE CIERRA EL FIRST TIME!  
-
+  } 
+  //HASTA AQUÍ ES EL FIRST TIME!  
   if (activity==0) {
+    animInicio1=0;
+    animInicio2=0;
     animInicio3=0;
     animInicio4=0;
     animInicio5=0;
+    animInicioCaer = 0;
+    contador = 0;
     Ani.to(this, 5, "animInicio1", 1, Ani.QUAD_OUT);
     ellipseMode(CENTER);
     strokeWeight(1);

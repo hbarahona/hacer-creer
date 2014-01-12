@@ -1,6 +1,7 @@
 import de.bezier.data.sql.*;
 SQLite db;
 String filedb = "prueba01";
+String filedb2 = "datosprueba";
 // ########################## PRELOAD ##########################
 //String filedb="historial";
 String regex="[//]*([a-zA-Z0-9]*)[.]*([a-zA-Z0-9]*)[.]+[a-zA-Z0-9]*"; 

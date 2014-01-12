@@ -5,6 +5,8 @@ Toggle toggle1, toggle2;
 Slider slider1, slider2;
 import de.looksgood.ani.*;
 boolean first_time = true;
+boolean screenWidth = true;
+boolean chrome = true;
 
 //PANTALLA 0 *********************
 boolean flagInicio=true;
@@ -82,6 +84,8 @@ float[] ruidosx = new float[cantidad2];
 float[] ruidosy = new float[cantidad2];
 int prendido=0;
 
+//PANTALLA SCREEN (9) Y CHOMRE (8) *********************
+
 //GLOBALES *********************
 PFont chico;
 PFont texto;
@@ -107,6 +111,8 @@ String pantalla5_2 = "Este número representa el sesgo en la información que re
 String pantalla5_3 = "error!";
 String pantalla5_4 = "error!";
 String pantalla6 = "Para concluir, te invito a que compartas esta experiencia. Quiero saber qué te pareció, aceptar sugerencias, aclarar dudas, leer opiniones distintas a la mía. El internet actual está siendo constantemente construido por cada uno de nosotros.\n¡Muchas gracias por tu tiempo! Para compartir, haz click en la red de nodos arriba de este texto. Para salir, haz click en la X ubicada en la esquina superior derecha del programa.";
+String pantalla8 = "No he encontrado instalado Google Chrome o tu Sistema Operativo No es Windows (lo siento, por el momento sólo funciono en Windows)\nEn cualquier caso, utilizaré sólo datos de prueba :(\n\nPara continuar sólo haz click.\nPara salir, pulsa la X en la esquina superior derecha del programa.";
+String pantalla9 = "Oops! Parece que tu resolución de pantalla es menor al tamaño mínimo requerido por 'Hacer-creer'.\nPuede que algunas opciones del costado derecho de la pantalla no se vean correctamente.\n\nPara continuar sólo haz click.\nPara salir, pulsa la X en la esquina superior derecha del programa.";
 
 
 

@@ -23,9 +23,6 @@ void header(String titulo_activity) {
       activity = 0;
       UI = true;
       flagInicio = true;
-      animInicio1 = 0;
-      animInicioCaer = 0;
-      contador = 0;
     }
   }
   textFont(titulo, 24);
@@ -536,6 +533,11 @@ void mouseReleased() {
         Ani.to(this, .5, "anim_chile", 140, Ani.SINE_OUT); 
         Ani.to(this, .5, "a4_x", 25, Ani.SINE_OUT);
       }
+    }
+  }
+  if (activity==6) {
+    if (mouseX>50 && mouseX<width-50 && mouseY>50 && mouseY<height-150) {
+      link("http://hacercreer.wordpress.com/2014/01/12/comentarios-opiniones-y-sugerencias/");
     }
   }
 }

@@ -1,13 +1,40 @@
 void draw() {
-  println("X:"+mouseX+", Y:"+mouseY);
+  //println("X:"+mouseX+", Y:"+mouseY);
+  if (activity==9) {
+    background(200);
+    fill(0);
+    textAlign(CENTER);
+    textFont(texto, 11);
+    text(pantalla9, width/2, height/2);
+    if (mousePressed) {
+      activity=0;
+      UI=true;
+    }
+  }
+    if (activity==8) {
+    background(200);
+    fill(0);
+    textAlign(CENTER);
+    textFont(texto, 11);
+    text(pantalla8, width/2, height/2);
+    if (mousePressed) {
+      activity=0;
+      UI=true;
+    }
+  }
   if (activity==0) {
+    if (screenWidth==true) {
+      screenWidth = false;
+      if (displayWidth<1366) {
+        activity=9;
+      }
+    }
     if (UI==true) {
       UI = false;
       setup();
     }
     if (flagInicio) {
       flagInicio = false;
-      contador = 0;
       for (int i=0;i<cantidad;i++) {
         w[i] = int(random(width));
         h[i] = int(random(height));

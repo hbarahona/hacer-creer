@@ -5,8 +5,14 @@ void copiarHistorial() { // LISTO, SOLO COMPATIBLE CON CHROME
 }
 
 void obtenerDatos() { //LISTO!!
-  copiarHistorial();
-  db = new SQLite(this, filedb);
+  if (chrome==true) {
+    copiarHistorial();
+    db = new SQLite(this, filedb);
+  }
+  else {
+    db = new SQLite(this, filedb2); 
+    activity=8;
+  }  
   if ( db.connect()) {
     db.query(query);
     while (db.next ()) {
@@ -26,9 +32,8 @@ void obtenerDatos() { //LISTO!!
 
 void limpiarSegments() {  //LISTO!!
   for (int i=0; i<segmentsNoLimpios.size(); i++) {
-    println(segmentsNoLimpios.get(i));
     String[] aux=match(segmentsNoLimpios.get(i), regex);
-    println(aux);
+    //println(aux);
     if (aux!= null) {
       if (aux[2]=="" || aux[2].length()< 4 || aux[2].equals("google")) {
         if (aux[2].equals("google")) {
