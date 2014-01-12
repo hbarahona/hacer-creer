@@ -5,7 +5,7 @@ Hacer-creer
 
 Proyecto para optar al título de Diseñador Gráfico de Ricardo Ossandón Valle
 
- * Descarga directa: <a href="https://github.com/hbarahona/hacer-creer/blob/master/Descarga%20Software/Hacer-creer_0.3.rar?raw=true">Hacer-creer 0.3</a> 
+ * Descarga directa: <a href="https://github.com/hbarahona/hacer-creer/blob/master/Descarga%20Software/Hacer_creer_0.5.rar?raw=true">Hacer-creer 0.3</a> 
 
 ##Requerimientos:
  * Navegador web Chrome instalado
